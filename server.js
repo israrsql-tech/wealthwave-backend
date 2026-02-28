@@ -40,7 +40,7 @@ const aiRoutes = require("./routes/ai");
 app.use("/api/ai", aiRoutes);
 
 // yahan baad me /api/auth, /api/transactions etc. mount karoge
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
   console.log(`Backend running on port ${PORT}`);
