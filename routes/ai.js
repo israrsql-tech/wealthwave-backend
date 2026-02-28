@@ -119,7 +119,7 @@ router.post("/finance-chat", auth, async (req, res) => {
 
     // 🔥 GROQ CALL (Production Safe)
     const completion = await groq.chat.completions.create({
-      model: "llama3-8b-8192",
+      model: "llama-3.1-8b-instant",
       messages,
       temperature: 0.2,
     });
