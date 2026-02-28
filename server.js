@@ -40,10 +40,9 @@ const aiRoutes = require("./routes/ai");
 app.use("/api/ai", aiRoutes);
 
 // yahan baad me /api/auth, /api/transactions etc. mount karoge
-app.listen(4000, () => {
-  console.log("Backend running on http://localhost:4000");
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+  console.log(`Backend running on port ${PORT}`);
 });
 
-// app.listen(4000, "0.0.0.0", () => {
-//   console.log("Backend running on http://10.113.213.87:4000");
-// });
