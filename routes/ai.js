@@ -378,6 +378,3 @@ return res.json({
 });
 
 module.exports = router;
-
-
-routes/ai.js
